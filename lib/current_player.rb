@@ -11,7 +11,7 @@ end
 
 def current_player(board)
 num = turn_count(board)
-( num % 2 == 0 ?
+( num.even? ?
  "X"
 :
  "O"
